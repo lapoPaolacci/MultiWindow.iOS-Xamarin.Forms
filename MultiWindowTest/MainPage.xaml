@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MultiWindowTest.MainPage">
+
+    <StackLayout>
+
+        <StackLayout
+            Orientation="Horizontal">
+
+            <Entry
+                x:Name="timeToastEntry"
+                Text="1"
+                HorizontalOptions="FillAndExpand">
+
+            </Entry>
+            
+            <Slider
+                x:Name="slider"
+                Maximum="10"
+                Minimum="1"
+                
+                ValueChanged="Slider_ValueChanged">
+
+            </Slider>
+
+            <Button
+                Text="Show Toast"
+                Clicked="Button_Clicked_2">
+            </Button>
+
+
+        </StackLayout>
+
+
+        <Button
+            Text="Present"
+            Clicked="Button_Clicked">
+
+        </Button>
+
+        
+        <Button
+            Text="Dismiss"
+            Clicked="Button_Clicked_1">
+
+        </Button>
+
+        <Button
+            Text="Push"
+            Clicked="Button_Clicked_3">
+
+        </Button>
+
+        <Button
+            Text="Pop"
+            Clicked="Button_Clicked_4">
+
+        </Button>
+    </StackLayout>
+
+</ContentPage>
